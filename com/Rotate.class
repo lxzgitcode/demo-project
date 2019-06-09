@@ -1,0 +1,26 @@
+public class Solution {
+    public String LeftRotateString(String str,int n) {
+        
+   	   if(str==null ||str.trim().equals("")){
+			   return str;
+		   }
+		   
+		   if(n>=str.length()){
+			   return str;
+		   }
+		   if(n<0){
+			   return str;
+		   }
+		   
+		   StringBuffer stringBuffer=new StringBuffer();
+		  
+			   stringBuffer.append(str.substring(n,str.length()));
+		  
+	
+			   stringBuffer.append(str.substring(0,n));
+	
+		   
+		   return stringBuffer.toString();
+	        
+	    }
+}

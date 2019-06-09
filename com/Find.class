@@ -1,0 +1,51 @@
+
+import java.util.Scanner;
+
+public class Solution {
+
+	 public boolean Find(int target, int [][] array) {
+
+			for(int i=0;i<array.length;i++) {
+		
+				for(int j=0;j<array[i].length;j++) {
+					
+					if(target==array[i][j]) {
+						return true;
+						
+					}
+				}
+			}
+			
+			return false;
+	        
+	        
+	    }
+	    
+	 public static void main(String[] args) {
+		 
+	     Solution sl=  new  Solution ();
+	         
+			Scanner sc =new Scanner(System.in);
+			int m=sc.nextInt();
+
+			int n=sc.nextInt();
+			int [][] arr= new int [m][n];
+			
+		
+			
+			for(int i=0;i<m;i++) {
+				for(int j=0;j<n;j++) {
+					arr[i][j]=sc.nextInt();
+				}
+			}
+			
+
+	   int num=sc.nextInt();
+			
+	   
+
+	            
+	    System.out.println(sl.Find(num, arr));        
+	            
+	        } 
+	}
