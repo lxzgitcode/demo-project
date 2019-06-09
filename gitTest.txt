@@ -2,7 +2,11 @@ ssh-keygen -t rsa -f ~/.ssh/id_rsa_github -C "lxz_struggle2014@163.com"
 
 git add
 git status
-git diff --stat
+<<<<<<< HEAD
+git diff --cached
+=======
+git diff --cached
+>>>>>>> master_dev
 
 
 ssh-rsa AAAABFEXKeH0UieqszwAJk4ML9awZwvmoggfmMayZp5rHIy4wcTUZKec01fwbQ6Pt3LL8YUOXj9qpsA3jsRloC4ak
